@@ -20,3 +20,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - web/assets/workload.onnx
+    - web/assets/model.onnx.data

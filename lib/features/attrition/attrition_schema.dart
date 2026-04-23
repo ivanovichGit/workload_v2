@@ -14,26 +14,12 @@ class FieldSpec {
   final List<String> options;
 }
 
+/// Orden exacto para el vector ONNX (15 valores):
+/// [0-5]: features numéricos (6 valores)
+/// [6-11]: one-hot encoding departamento (6 valores)
+/// [12-14]: one-hot encoding nivel de rol (3 valores)
 const List<FieldSpec> attritionSchema = [
-  FieldSpec(
-    key: 'department',
-    label: 'Departamento',
-    type: FormFieldType.dropdown,
-    options: [
-      'Engineering',
-      'HR',
-      'Finance',
-      'Marketing',
-      'Sales',
-      'Operations',
-    ],
-  ),
-  FieldSpec(
-    key: 'role_level',
-    label: 'Nivel de Rol',
-    type: FormFieldType.dropdown,
-    options: ['Junior', 'Mid', 'Senior'],
-  ),
+  // Features numéricos en orden del modelo
   FieldSpec(
     key: 'monthly_salary',
     label: 'Salario Mensual (USD)',
@@ -64,6 +50,26 @@ const List<FieldSpec> attritionSchema = [
     label: 'Satisfacción Laboral',
     type: FormFieldType.integer,
   ),
+  // Features categóricos
+  FieldSpec(
+    key: 'department',
+    label: 'Departamento',
+    type: FormFieldType.dropdown,
+    options: [
+      'Engineering',
+      'Finance',
+      'HR',
+      'Marketing',
+      'Operations',
+      'Sales',
+    ],
+  ),
+  FieldSpec(
+    key: 'role_level',
+    label: 'Nivel de Rol',
+    type: FormFieldType.dropdown,
+    options: ['Junior', 'Mid', 'Senior'],
+  ),
 ];
 
 const Map<String, List<double>> attritionRanges = {
@@ -74,3 +80,16 @@ const Map<String, List<double>> attritionRanges = {
   'absences_days': [0, 20],
   'job_satisfaction': [1, 5],
 };
+
+/// Departamentos en orden de one-hot encoding
+const List<String> departments = [
+  'Engineering',
+  'Finance',
+  'HR',
+  'Marketing',
+  'Operations',
+  'Sales',
+];
+
+/// Niveles de rol en orden de one-hot encoding
+const List<String> roleLevels = ['Junior', 'Mid', 'Senior'];
