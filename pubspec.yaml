@@ -22,4 +22,4 @@ flutter:
   uses-material-design: true
   assets:
     - web/assets/workload.onnx
-    - web/assets/model.onnx.data
+    - web/assets/workload.onnx.data
