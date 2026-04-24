@@ -17,7 +17,7 @@ Aquí se puede ver todo el proceso de principio a fin: preparación de los datos
 
 Puedes acceder directamente al notebook en el siguiente enlace:
 
-https://colab.research.google.com/drive/1MAzcOfBp9f9jXAmHjg8dkZVCuth_iH8k
+https://colab.research.google.com/drive/1iBakt47bKUJ3zYEjfsiyHmN0x-XYohbZ?usp=sharing
 
 Este notebook está pensado como material de apoyo para comprender cómo funciona el sistema internamente y qué decisiones se tomaron durante su desarrollo.
 
@@ -27,7 +27,7 @@ Este notebook está pensado como material de apoyo para comprender cómo funcion
 
 El contexto del problema, la explicación de las variables utilizadas y el fundamento del sistema se encuentran documentados en el siguiente archivo:
 
-https://docs.google.com/document/d/1P3JHQxHM2b1CSVKK12xP3gwYpF5BnFQ2vrVZi0Sw9lU/edit?tab=t.0#heading=h.ukz2c85uzrq2
+https://docs.google.com/document/d/1k-MXICaP_9tNM-XMI0hI0z87WKA-yRYx_uRubNKbjwA/edit?usp=sharing
 
 Este documento explica:
 - El objetivo del sistema
@@ -45,7 +45,7 @@ Además del notebook, el sistema cuenta con una aplicación web que permite real
 
 La aplicación se encuentra disponible en:
 
-https://ivanovichgit.github.io/workload_web/
+https://ivanovichgit.github.io/workload_web_v2/
 
 Al abrir el enlace, se mostrará la interfaz de la aplicación tal como se aprecia en la imagen del proyecto.
 
